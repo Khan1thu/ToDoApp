@@ -1,0 +1,176 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+body {
+  background-color: black;
+  height: 100vh;
+  background-image: url("./images/bg-desktop-dark.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.whitetheme {
+  background-color: white;
+  height: 100vh;
+  background-image: url("./images/bg-desktop-light.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 35%;
+}
+
+.moon {
+  cursor: pointer;
+  position: relative;
+  left: 0;
+  bottom: 0;
+  top: 0;
+  display: none;
+}
+
+.suntheme {
+  display: none;
+}
+
+.moontheme {
+  display: block;
+}
+
+.title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 2mm;
+  margin: 30px 0;
+}
+
+.bar {
+  position: relative;
+}
+
+.new_todo {
+  width: 100%;
+  border-radius: 3px;
+  background-color: #25273c;
+  border: 0px solid;
+  font-size: 15px;
+  color: hsl(234, 39%, 85%);
+  margin: 0px 0px 20px 0px;
+  padding: 20px 0px 20px 50px;
+}
+
+.new_todowhitetheme {
+  background-color: hsl(0, 0%, 98%);
+}
+
+.check {
+  position: absolute;
+  top: 17px;
+  left: 20px;
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  border: 1px solid hsl(234, 39%, 85%);
+  border-radius: 20px;
+}
+
+.checked {
+  background-image: url("./images/icon-check.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: linear-gradient hsl(192, 100%, 67%) to hsl(280, 87%, 65%);
+}
+
+.check:hover {
+  border: 1px solid hsl(220, 98%, 61%);
+}
+
+.todos {
+  position: relative;
+  width: 100%;
+  background-color: #25273c;
+  border: 0px solid;
+  border-bottom: 1px solid #36384d;
+  font-size: 15px;
+  color: hsl(234, 39%, 85%);
+  margin: 0px 0px 0px 0px;
+  text-align: left;
+  padding: 20px 30px 20px 50px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.todoswhitetheme {
+  position: relative;
+  width: 100%;
+  background-color: white;
+  border: 0px solid;
+  border-bottom: 1px solid #36384d;
+  font-size: 15px;
+  color: hsl(234, 39%, 85%);
+  margin: 0px 0px 0px 0px;
+  text-align: left;
+  padding: 20px 0px 20px 50px;
+  cursor: pointer;
+}
+
+.todosChecked {
+  box-shadow: 10px 2px black;
+}
+
+.todos:hover {
+  box-shadow: 10px 2px black;
+}
+
+.navi {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 30px;
+  background-color: #25273c;
+}
+
+.items p {
+  font-size: 0.8em;
+  color: hsl(234, 11%, 52%);
+}
+
+.gate a {
+  text-decoration: none;
+  color: hsl(234, 11%, 52%);
+  font-size: 0.8em;
+  margin: 0px 5px;
+  cursor: pointer;
+}
+
+.gate a:hover {
+  color: white;
+}
+
+.clear p {
+  font-size: 0.8em;
+  color: hsl(234, 11%, 52%);
+  cursor: pointer;
+}
+
+.clear p:hover {
+  color: white;
+}
